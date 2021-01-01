@@ -1,0 +1,154 @@
+
+[
+    {"tag": "greeting",
+    "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+    "responses": ["Hello, hope your're doing fine, how can I help you?"],
+    "context": []
+    },
+    {"tag": "goodbye",
+    "patterns": ["Bye", "See you later", "Goodbye", "so long", "Bye-Bye", "See you later", "See you soon", "I must be going", "Have a good one"],
+    "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."],
+    "context": []
+    },
+    {"tag": "thanks",
+    "patterns": ["Thanks", "Thank you", "That's helpful"],
+    "responses": ["Happy to help!", "Any time!", "My pleasure"],
+    "context": []
+    },
+    {"tag": "time",
+    "patterns": ["What time is it?", "time ?", "time" ],
+    "responses": ["who cares about time, developpers never watch time :o"],
+    "context": []
+    },
+    {"tag": "developped",
+    "patterns": ["Who made you ?", "whos is your father ?", "who developped you?", "Who made you", "whos is your father",
+                "who developped you", "who developped you ?"],
+    "responses": ["i was developped by Youcef, Syphax, Lila, Kenza"],
+    "context": []
+    },
+    {"tag": "YoucefARAB",
+    "patterns": ["Who is Youcef ARAB ?", "Youcef ?", "ARAB Youcef ?", "who is youcef ?", "Who is ARAB Youcef ?"],
+    "responses": ["yatchi ? you know him ? here is his github : https://github.com/YatchiYa "],
+    "context": []
+    },
+    {"tag": "Syphax",
+    "patterns": ["Who is Syphax ?", "Syphax ?", "Syphax ?", "Who is Syphax ?"],
+    "responses": ["Xen der ? you know him ? here is his github : https://github.com/syphaxAouadene "],
+    "context": []
+    },
+    {"tag": "KenzaBESSACI",
+    "patterns": ["Who is Kenza BESSACI ?", "Kenza ?", "BESSACI Kenza ?", "Who is BESSACI Kenza ?"],
+    "responses": ["you know her ? she is a software developper - here is her github : https://github.com/kenza-95 "],
+    "context": []
+    },
+    {"tag": "LILA",
+    "patterns": ["Who is Lila ACHOUR ?", "Lila ?", "ACHOUR Lila ?", "Who is ACHOUR Lila ?"],
+    "responses": ["oh you are searching for the youngest in our groupe!! you know her ? if not take your way otherwise here is her github : https://github.com/lilaACHOUR"],
+    "context": []
+    },
+    {"tag": "options",
+    "patterns": ["what can you do ?", "options ?", "how can you help me ?"],
+    "responses": ["i'll try to help you in order to find if you are sick or not."],
+    "context": []
+    },
+    {"tag": "sickness",
+    "patterns": ["i think i got COVID" , "i think i have COVID", "sick", "i'm sick", "i'm sick, what can i do ?", "i'm ill what can i do ?", "can you help me, i'm sick ?"],
+    "responses": ["okey, don't panic, just answer some question and we will try to help you and contact a doctor, do you have a fever ?"],
+    "context": ["fever"]
+    },
+    {"tag": "fever",
+    "patterns": ["yes"],
+    "responses": ["okey, did you lost your sens of smell ?"],
+    "context": ["lost_sens"]
+    },
+    {"tag": "fever",
+    "patterns": ["no"],
+    "responses": ["okey, than maybe you lost your sens of smell ?"],
+    "context": ["lost_sens_no"]
+    },
+    {"tag": "lost_sens",
+    "patterns": ["yes"],
+    "responses": ["okey, there a hight chance it's COVID19, register in this our website and we will help you to contact a doctor"],
+    "context": []
+    },
+    {"tag": "lost_sens",
+    "patterns": ["no"],
+    "responses": ["okey, than i think it's just a rhum, don't worry, take of yourself"],
+    "context": []
+    },
+    {"tag": "lost_sens_no",
+    "patterns": ["yes"],
+    "responses": ["okey, maybe it's COVID19, register on our website and we will help you to contact a doctor"],
+    "context": []
+    },
+    {"tag": "lost_sens_no",
+    "patterns": ["no"],
+    "responses": ["okey, than i think it's just a rhum, don't worry, take care of yourself"],
+    "context": []
+    },
+    {"tag": "howAreYou",
+    "patterns": ["how are you ?", " good ?" ],
+    "responses": ["fine thanks and you ?"],
+    "context": ["goodtoknow"]
+    },
+    {"tag": "goodtoknow",
+    "patterns": ["yes"],
+    "responses": ["great to hear that, what can i do for you"],
+    "context": []
+    },
+    {"tag": "goodtoknow",
+    "patterns": ["no"],
+    "responses": ["ah, what can i do to help you ?"],
+    "context": []
+    },{"tag": "covid",
+        "patterns": ["What is the cure for covid?", "Is there a covid drug?"],
+        "answers": ["ah, what can I do to help you?", "Covid!", "Covid is a strong flu", "if you have a fever, loss of taste, loss of smell , headaches "," No not necessarily do not worry "," Yes unfortunately "," Yes there is a card on the site "," Yes of course "," from 7 to 30 days "," Take honey, lemon, zinc, vitamin D "," hoping soon "],
+        "context": []
+        },
+        {"tag": "card",
+        "patterns": ["In the site, do we have a map?", "A map?", "We find all the countries", "Why is there a map in the site?", "You have created the map "," You must create an account to view the map? "," Is the map up to date? "," Can we zoom in? "," The map is a good idea ", "Thank you for all the information"],
+        "answers": ["Yes, do not search", "Yes there is a card", "Yes", "Learn more about the covid", "Yes our young developers", "Yes of course", " Yes of course "," Yes to help you "],
+        "context": []
+        },
+    {"tag": "options",
+    "patterns": ["what are you good at?", "what is your function?", "what can you do?", "what are your functions?",
+    "what is your job?", "what can you do for me?", "what can you do for us?", "how can you help me?",
+    "your duties, please?", "your job, please?", "what are your qualities?", "can you do something for me?",
+    "your features please?", "what kind of questions can you answer?", "tell me what is your main job?", "job?",
+    "functions?", "function?", "what can you do?", "options?", "how can you help me?"],
+    "Answers": ["My name is Yatchie, and I am here to help users learn more about their Symptoms",
+    "My job is to identify if you get covid-19 or not, if you're ready, let's start (yes | no)?",
+    "my functions are related to covid-19, I would like to ask you a few questions if you don't mind, (yes | no)?",
+    "I will try to help you to know if you are sick or not, ready? (yes | no)"],
+    "context": []
+    },
+    {"tag": "disease",
+    "patterns": ["sick", "I am sick", "I am sick, what can I do?", "I am sick, what can I do?", "can you help me, I am sick? " ,
+        "I don't feel good", "I don't feel well", "I feel bad", "I am bad", "I can't even speak", "I think I have caught something",
+    "I think I am sick", "I think I am sick", "my headache", "my injured body", "I am injured", "badly", "I am badly inside ",
+    "I have pain", "I have a headache", "I don't know what I got", "do I get covid-19?", "you think I am sick? ",
+    "I feel the pain", "I am painfull", "I am not Okey", "I am not good", "I cough", "I have a cold"],
+    "answers": ["okay don't panic just answer a question and we'll try to help you and get a doctor, do you have a fever?"],
+    "context": ["fever"]
+    },
+    {"tag": "Syphax",
+    "patterns": ["Who is Syphax?", "Syphax?", "Syphax?", "Who is Syphax?"],
+    "answers": ["Syphax? you know him? here is his LinkedIn: https://www.linkedin.com/in/syphax-aouadene -828008178"],
+    "context": []
+    },
+    
+    
+    {"tag": "age",
+    "patterns": ["How old are you?", "Where were you born?", "Where are you from?", "Are you tall?", "Are you short?" ,
+    "tell me your age, please?", "your place of birth, please?", "your age?", "age?", "place of birth?",
+    "birthday?", "what is your birthday?", "your country?", "country?", "your city?", "your date of birth?",
+    "where are you from?", "do you have a name?", "your name?", "what is your nationality?", "your nationality?"],
+    "responses": ["I am from Kabylia, I was born on 01/11/2020, I seem to be very young but I do not get up like humans",
+    "I was born a few days ago, I am from Kabylie, I grow up very quickly", "I am Yatchie, from Kabylie, I was on board a few days ago"],
+    "context": []
+    },
+    
+    {"tag": "languages",
+    "patterns": ["what languages ​​do you speak?", "how many languages ​​do you speak?", "how many languages ​​do you understand?",
+    "how many languages?", "French, English, Kabyle, Arabic?", "do you understand me?", "do you understand English?
+]
